@@ -87,23 +87,15 @@ cars.loc[cars['Model'].isin(models),['Model','cyl','gear']]
    https://www.anaconda.com/download
    ```
 
-2. Launch the Jupiter Notebook
+2. Launch the Jupiter Notebook and create a new notebook
    
-   
-3. Install the required packages:
-   ```
-   pip install pandas
-   ```
 
-4. Copy Paste the codes and shift + enter to see the Output
+3. Copy Paste the codes and shift + enter to see the Output
 
 ## Requirements
 
 - Python 3.x
 - Pandas library
 
-You can install the required dependencies by running:
-```
-pip install pandas
-```
+
 
