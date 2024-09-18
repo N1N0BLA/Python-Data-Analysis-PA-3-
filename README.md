@@ -80,22 +80,20 @@ cars.loc[cars['Model'].isin(models), ['Model', 'cyl', 'gear']]
 
 ## How to Run
 
-1. Clone this repository to your local machine:
+1. Download and Install the Anaconda Distribution app in your Computer
    ```
-   git clone https://github.com/yourusername/python-data-analysis-pandas.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd python-data-analysis-pandas
+   https://www.anaconda.com/download
    ```
 
+2. Launch the Jupiter Notebook
+   ```
+   ```
 3. Install the required packages:
    ```
    pip install pandas
    ```
 
-4. Run the Python scripts in a Jupyter Notebook or directly in your Python environment.
+4. Copy Paste the codes and shift + enter to see the Output
 
 ## Requirements
 
@@ -107,6 +105,3 @@ You can install the required dependencies by running:
 pip install pandas
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
