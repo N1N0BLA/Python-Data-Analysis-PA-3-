@@ -1,6 +1,10 @@
 #PYTHON DATA ANALYSIS (PANDAS)
 #JOSE MARTIN SJ. NINOBLA             2 ECE - D | September 4, 2024
 
+import pandas as pd
+
+# Load the CSV file into a DataFrame
+cars = pd.read_csv('cars.csv')
 
 ###PROBLEM A
 # the value of ":5" selects ONLY the first 5 rows of the DataFrame without including the 5th variable/value
