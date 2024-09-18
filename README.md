@@ -88,8 +88,8 @@ cars.loc[cars['Model'].isin(models),['Model','cyl','gear']]
    ```
 
 2. Launch the Jupiter Notebook
-   ```
-   ```
+   
+   
 3. Install the required packages:
    ```
    pip install pandas
