@@ -1,5 +1,7 @@
 
 # Python Data Analysis with Pandas
+JOSE MARTIN SJ. NINOBLA
+2 ECE - D | September 18, 2024
 
 This repository contains solutions for **Experiment 3** of the course *Advanced Computer Programming and Algorithms (ECE 2112)* at the University of Santo Tomas, Faculty of Engineering. The experiment focuses on using Python's Pandas library for data analysis.
 
