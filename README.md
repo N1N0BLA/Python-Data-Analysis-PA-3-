@@ -21,17 +21,16 @@ The tasks in this assignment are divided into two problems, both involving opera
 **File:** `Surname_Pandas-P1.py`
 
 ```python
+
 import pandas as pd
 
-# Load the CSV file into a DataFrame named 'cars'
+# Load the CSV file into a DataFrame
 cars = pd.read_csv('cars.csv')
 
-# Display the first five rows of the DataFrame
-# The .head() function retrieves the first five rows.
+# Display the first five rows
 cars.head()
 
-# Display the last five rows of the DataFrame
-# The .tail() function retrieves the last five rows.
+# Display the last five rows
 cars.tail()
 ```
 
@@ -47,31 +46,32 @@ cars.tail()
 ```python
 import pandas as pd
 
-# Load the CSV file into a DataFrame named 'cars'
+# Load the CSV file into a DataFrame
 cars = pd.read_csv('cars.csv')
 
-### PROBLEM A
-# Display the first five rows with only odd-numbered columns (1, 3, 5, 7...).
-# The ":5" slices the first five rows, and "::2" selects every second column (starting from column index 0).
-cars.iloc[:5, ::2]
+###PROBLEM A
+# the value of ":5" selects ONLY the first 5 rows of the DataFrame without including the 5th variable/value
+# The double colon "::2" selects every second column.
+cars.iloc[:5,::2]
 
-### PROBLEM B
-# Display the row that contains the 'Model' as 'Mazda RX4'.
-# The .loc method is used to locate rows that match a specific condition.
-cars.loc[cars['Model'] == 'Mazda RX4']
+###PROBLEM B
+#the code ".loc" is used to locate and print the row that contains the : 'Model' that is of 'Mazda RX4'
+cars.loc[cars['Model']=='Mazda RX4'] 
 
-### PROBLEM C
-# Find how many cylinders the 'Camaro Z28' has.
-# The .loc method selects the row where 'Model' is 'Camaro Z28', and retrieves the 'cyl' column.
-cars.loc[(cars['Model'] == 'Camaro Z28'), ['cyl']]
 
-### PROBLEM D
-# Create a list of car models of interest.
-models = ['Mazda RX4 Wag', 'Ford Pantera L', 'Honda Civic']
+###PROBLEM C
+#the code ".loc" is used to locates row that contains the : 'Model' that is of 'Camaro Z28' but only then prints the number of cylinders it has
+cars.loc[(cars['Model']=='Camaro Z28'), ['cyl']]
 
-# Use .loc and .isin to filter the DataFrame and retrieve the 'Model', 'cyl', and 'gear' columns 
-# for the specified car models in the list.
-cars.loc[cars['Model'].isin(models), ['Model', 'cyl', 'gear']]
+###PROBLEM D
+#Creates a list of car models required
+models = ['Mazda RX4','Ford Pantera L','Honda Civic']
+
+#the code ".loc" is used to locate the requirements which are the model of a car and outputs the required information with it(cylinders, gears)
+#the code ".isin" checks if any 'Model' in the DataFrame matches the car models in the list.
+cars.loc[cars['Model'].isin(models),['Model','cyl','gear']]
+
+#end
 ```
 
 #### Explanation:
