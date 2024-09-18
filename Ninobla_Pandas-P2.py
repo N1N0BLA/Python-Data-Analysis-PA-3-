@@ -1,4 +1,6 @@
-#start
+#PYTHON DATA ANALYSIS (PANDAS)
+#JOSE MARTIN SJ. NINOBLA             2 ECE - D | September 4, 2024
+
 
 ###PROBLEM A
 # the value of ":5" selects ONLY the first 5 rows of the DataFrame without including the 5th variable/value
